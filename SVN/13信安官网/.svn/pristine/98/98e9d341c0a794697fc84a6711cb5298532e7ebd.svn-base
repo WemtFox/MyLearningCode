@@ -1,5 +1,0 @@
-name: 13xinanzuoye
-version: 1
-handle:
-- compress:  if ( out_header["Content-type"] ~ "text/javascript" ) compress
-- compress:  if ( out_header["Content-type"] ~ "text/html" ) compress
