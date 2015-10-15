@@ -1,0 +1,16 @@
+
+ASPack 2.12
+-----------
+ASPack is an advanced  Win32   executable file 
+compressor, capable  of reducing  the file size 
+of 32-bit  Windows programs by as much  as 70%. 
+(ASPack's  compression  ratio improves  upon the 
+industry-standard zip  file format by as much as
+10-20%.) ASPack makes  Windows 95/98/NT programs 
+and libraries smaller, and  decrease load  times 
+across  networks,  and  download times from  the 
+internet;  it  also protects  programs   against 
+reverse engineering by non-professional  hackers. 
+Programs compressed with ASPack are self-contained 
+and run exactly as before, with no runtime 
+performance penalties.

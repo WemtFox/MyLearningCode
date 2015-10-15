@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>班级通知更新</title>
+<link rel="stylesheet" type="text/css" href="update.css">
+</head>
+<style type="text/css">
+#notice{height: 150px;}
+
+</style>
+<body>
+
+<div class="container">
+
+<form action="update_notice.php" method="post" align="center">
+<table align="center">
+<tr><td colspan="2">
+<h1>班级通知更新</h1>
+</td></tr>
+
+<tr><td>
+写在这就行啦：</td><td><textarea name="class_notice" id="notice"></textarea>
+</td></tr>
+
+<tr><td colspan="2">
+<input type="submit" value="提交">
+</td></tr>
+
+<tr><td colspan="2">
+注意：网址不要泄露给别人！
+</td></tr>
+
+</table>
+</form>
+
+
+</div>
+
+</body>
+</html>

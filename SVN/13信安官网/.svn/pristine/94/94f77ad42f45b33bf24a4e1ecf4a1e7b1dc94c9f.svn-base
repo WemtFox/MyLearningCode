@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>班级通知更新</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<form  role="from" action="update_notice.php" method="post" >
+
+<h1 align="center">班级通知更新</h1>
+<div class="form-group">
+<textarea class="form-control" rows="10" name="class_notice" id="notice" style="width:90%;margin:10px auto;"></textarea>
+</div>
+
+<div class="form-group">
+<button type="submit" class="btn btn-default btn-lg btn-block" style="width:30%;margin:10px auto;">提交</button>
+</div>
+
+<div class="form-group">
+<h1 align="center"><small>注意：网址不要泄露给别人！</small></h1>
+</div>
+
+
+</form>
+
+
+</div>
+
+</body>
+</html>

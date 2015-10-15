@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ManagerService - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/ManagerService.res" /d "NDEBUG" /d "_AFXDLL" "D:\All_Code\VC++6.0\C++ºÚ¿Í±à³Ì½ÒÃØÓë·À·¶\Chapter3\ManagerService\ManagerService.rc"" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPA7CD.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/ManagerService.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\All_Code\VC++6.0\C++ºÚ¿Í±à³Ì½ÒÃØÓë·À·¶\Chapter3\ManagerService\ManagerService.cpp"
+"D:\All_Code\VC++6.0\C++ºÚ¿Í±à³Ì½ÒÃØÓë·À·¶\Chapter3\ManagerService\ManagerServiceDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPA7CD.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPA7CE.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/ManagerService.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\All_Code\VC++6.0\C++ºÚ¿Í±à³Ì½ÒÃØÓë·À·¶\Chapter3\ManagerService\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPA7CE.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/ManagerService.pdb" /machine:I386 /out:"Release/ManagerService.exe"  ".\Release\ManagerService.obj" ".\Release\ManagerServiceDlg.obj" ".\Release\StdAfx.obj" ".\Release\ManagerService.res" "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ManagerService.cpp
+ManagerServiceDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+ManagerService.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

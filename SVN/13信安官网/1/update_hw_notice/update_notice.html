@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>班级通知更新</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../summernote/summernote.css" /> 
+    <script src="../summernote/summernote.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="../summernote/summernote-zh-CN.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+<form  role="from" action="update_notice.php" method="post" >
+
+<h1 align="center">班级通知更新</h1>
+<div class="form-group">
+<textarea class="form-control" rows="10" name="class_notice" id="notice" style="width:90%;margin:10px auto;"></textarea>
+</div>
+
+<div class="form-group">
+<button type="submit" class="btn btn-default btn-lg btn-block" style="width:30%;margin:10px auto;">提交</button>
+</div>
+
+<div class="form-group">
+<h1 align="center"><small>注意：网址不要泄露给别人！</small></h1>
+</div>
+
+
+</form>
+
+
+</div>
+
+</body>
+
+
+<script>
+$(document).ready(function() {
+	
+	//加载添加新闻的文本编辑器
+	$('#notice').summernote({
+		height:300,
+		focus:true,
+		maxHeight:null,
+		minHeight:null,
+		lang:"zh-CN",
+	   	onImageUpload: function(files, editor, $editable) {
+		  sendFile(files[0],editor,$editable);
+	  	}
+	});
+
+	function sendFile(file, editor, $editable) {
+		var timestamp = new Date().getDate();
+
+		filename = file['name'];
+		data = new FormData();
+		data.append("name",filename);
+	    data.append("file", file);
+	    url = "./upload-images.php";
+	    $.ajax({
+	        data: data,
+	        type: "POST",
+	        url: url,
+	        cache: false,
+	        contentType: false,
+	        processData: false,
+	        success: function(data) {
+				//data是返回php打印出来的数据
+				//editor.insertImage($editable, "./images/"+filename);
+				editor.insertImage($editable, data);
+				console.log(data);
+				},
+			error:function(){
+				$(".note-alarm").html("上传失败");
+			}
+	        
+	    });
+	}	
+
+});
+
+</script>
+
+
+</html>

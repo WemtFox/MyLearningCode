@@ -1,0 +1,245 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PeParse.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\PeParse.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 PeParse"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "PeParse 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2015",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_PEPARSE_DIALOG DIALOGEX 0, 0, 498, 231
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "PeParse"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "程序路径：",IDC_STATIC_PATH,13,7,47,16
+    EDITTEXT        IDC_EDIT_PATH,71,7,165,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览",IDC_BUTTON_BROWSE,247,7,52,16
+    LTEXT           "入口点：",IDC_STATIC_IN,15,33,46,18
+    LTEXT           "节区数目：",IDC_STATIC_NUM,161,33,46,18
+    LTEXT           "文件对齐：",IDC_STATIC_FILE,161,60,46,21
+    LTEXT           "映像基址：",IDC_STATIC_BASE,15,60,46,21
+    EDITTEXT        IDC_EDIT_IN,73,33,78,18,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NUM,218,33,78,18,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_BASE,73,63,78,18,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "连接器版本：",IDC_STATIC_LINK_VER,15,89,46,21
+    LTEXT           "内存对齐：",IDC_STATIC_MEMORY,161,89,46,21
+    EDITTEXT        IDC_EDIT_FILE,218,63,78,18,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_LINK_VER,73,92,78,18,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_MEMORY,218,92,78,18,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,13,117,285,76
+    LTEXT           "PE入口信息：",IDC_EDIT_PERNTRY,17,201,53,16
+    EDITTEXT        IDC_EDIT_PEINFO,79,201,219,16,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "地址转换",IDC_STATIC_ADDRESS,305,9,186,162
+    EDITTEXT        IDC_EDIT_VA,379,29,86,18,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FileOffset,379,86,86,18,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RVA,379,57,86,18,ES_AUTOHSCROLL
+    LTEXT           "区段",IDC_STATIC_SECTION,322,113,42,19
+    EDITTEXT        IDC_EDIT_SECTION,393,113,72,19,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "计算",IDC_BUTTON_CALC,398,139,67,27
+    CONTROL         "虚拟地址",IDC_RADIO_VA,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | BS_FLAT,315,29,49,18
+    CONTROL         "相对虚拟地址",IDC_RADIO_RVA,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | BS_FLAT,315,57,49,18
+    CONTROL         "文件偏移",IDC_RADIO_FileOffset,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_FLAT,315,86,49,18
+    GROUPBOX        "Static",IDC_STATIC,305,170,186,47
+    LTEXT           "节名：",IDC_STATIC_SECNAME,311,179,30,16
+    LTEXT           "节大小：",IDC_STATIC_SECSIZE,401,179,35,16
+    EDITTEXT        IDC_EDIT_SECNAME,346,179,40,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SECSIZE,437,179,46,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD_SEC,437,201,47,15
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "PeParse Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "PeParse\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2015\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "PeParse.EXE\0"
+            VALUE "ProductName", "PeParse 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PEPARSE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 491
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 PeParse(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\PeParse.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

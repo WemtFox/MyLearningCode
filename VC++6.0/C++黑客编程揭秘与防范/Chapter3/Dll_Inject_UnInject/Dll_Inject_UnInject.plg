@@ -1,0 +1,38 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Dll_Inject_UnInject - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP8673.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/Dll_Inject_UnInject.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\ALL_CODE\VC++6.0\C++∫⁄øÕ±‡≥ÃΩ“√ÿ”Î∑¿∑∂\CHAPTER3\Dll_Inject_UnInject\Dll_Inject_UnInjectDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP8673.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP8674.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Dll_Inject_UnInject.pdb" /debug /machine:I386 /out:"Debug/Dll_Inject_UnInject.exe" /pdbtype:sept 
+".\Debug\Dll_Inject_UnInject.obj"
+".\Debug\Dll_Inject_UnInjectDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Dll_Inject_UnInject.res"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP8674.tmp"
+<h3>Output Window</h3>
+Compiling...
+Dll_Inject_UnInjectDlg.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/Dll_Inject_UnInject.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\Dll_Inject_UnInject.sbr" ".\Debug\Dll_Inject_UnInjectDlg.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Dll_Inject_UnInject.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

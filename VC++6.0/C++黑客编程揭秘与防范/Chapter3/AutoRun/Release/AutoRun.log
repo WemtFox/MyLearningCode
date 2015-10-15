@@ -1,0 +1,11 @@
+﻿生成启动时间为 2015/7/26 15:30:05。
+     1>项目“D:\All_Code\VC++6.0\C++黑客编程揭秘与防范\Chapter3\AutoRun\AutoRun.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\Release\AutoRun.pch" /Fo".\Release\\" /Fd".\Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+     1>E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\atlmfc\include\afx.h(24): fatal error C1189: #error :  Building MFC application with /MD[d] (CRT dll version) requires MFC shared dll version. Please #define _AFXDLL or do not use /MD[d]
+     1>已完成生成项目“D:\All_Code\VC++6.0\C++黑客编程揭秘与防范\Chapter3\AutoRun\AutoRun.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.19

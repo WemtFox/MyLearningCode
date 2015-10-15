@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "018窗口绘画：贝塞尔曲线", "018窗口绘画：贝塞尔曲线\018窗口绘画：贝塞尔曲线.vcxproj", "{725551DB-BAA3-40AE-89B8-8489F46801CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{725551DB-BAA3-40AE-89B8-8489F46801CE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{725551DB-BAA3-40AE-89B8-8489F46801CE}.Debug|Win32.Build.0 = Debug|Win32
+		{725551DB-BAA3-40AE-89B8-8489F46801CE}.Release|Win32.ActiveCfg = Release|Win32
+		{725551DB-BAA3-40AE-89B8-8489F46801CE}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

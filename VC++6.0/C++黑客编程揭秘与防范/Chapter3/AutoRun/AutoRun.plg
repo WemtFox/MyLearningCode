@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AutoRun - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/AutoRun.res" /d "_DEBUG" "D:\All_Code\VC++6.0\C++黑客编程揭秘与防范\Chapter3\AutoRun\AutoRun.rc"" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPF6D8.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/AutoRun.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\All_Code\VC++6.0\C++黑客编程揭秘与防范\Chapter3\AutoRun\AutoRun.cpp"
+"D:\All_Code\VC++6.0\C++黑客编程揭秘与防范\Chapter3\AutoRun\AutoRunDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPF6D8.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPF6D9.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/AutoRun.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\All_Code\VC++6.0\C++黑客编程揭秘与防范\Chapter3\AutoRun\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPF6D9.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/AutoRun.pdb" /debug /machine:I386 /out:"Debug/AutoRun.exe" /pdbtype:sept  ".\Debug\AutoRun.obj" ".\Debug\AutoRunDlg.obj" ".\Debug\StdAfx.obj" ".\Debug\AutoRun.res" "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AutoRun.cpp
+AutoRunDlg.cpp
+Generating Code...
+Linking...
+LINK : fatal error LNK1207: incompatible PDB format in "D:\All_Code\VC++6.0\C++黑客编程揭秘与防范\Chapter3\AutoRun\Debug\AutoRun.pdb"; delete and rebuild
+执行 link.exe 时出错.
+
+
+
+<h3>Results</h3>
+AutoRun.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

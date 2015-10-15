@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: NoneDll_Inject - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/NoneDll_Inject.res" /d "NDEBUG" /d "_AFXDLL" "D:\All_Code\VC++6.0\C++ºÚ¿Í±à³Ì½ÒÃØÓë·À·¶\Chapter3\NoneDll_Inject\NoneDll_Inject.rc"" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP1219.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/NoneDll_Inject.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\All_Code\VC++6.0\C++ºÚ¿Í±à³Ì½ÒÃØÓë·À·¶\Chapter3\NoneDll_Inject\NoneDll_Inject.cpp"
+"D:\All_Code\VC++6.0\C++ºÚ¿Í±à³Ì½ÒÃØÓë·À·¶\Chapter3\NoneDll_Inject\NoneDll_InjectDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP1219.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP121A.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/NoneDll_Inject.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\All_Code\VC++6.0\C++ºÚ¿Í±à³Ì½ÒÃØÓë·À·¶\Chapter3\NoneDll_Inject\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP121A.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/NoneDll_Inject.pdb" /machine:I386 /out:"Release/NoneDll_Inject.exe"  ".\Release\NoneDll_Inject.obj" ".\Release\NoneDll_InjectDlg.obj" ".\Release\StdAfx.obj" ".\Release\NoneDll_Inject.res" "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+NoneDll_Inject.cpp
+NoneDll_InjectDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+NoneDll_Inject.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

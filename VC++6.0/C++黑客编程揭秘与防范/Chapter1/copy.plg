@@ -1,0 +1,37 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: copy - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP9ED3.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/copy.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\All_Code\VC++6.0\C++ºÚ¿Í±à³Ì½ÒÃØÓë·À·¶\Chapter1\copy.c"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP9ED3.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP9ED4.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/copy.pdb" /debug /machine:I386 /out:"Debug/copy.exe" /pdbtype:sept 
+".\Debug\copy.obj"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP9ED4.tmp"
+<h3>Output Window</h3>
+Compiling...
+copy.c
+d:\all_code\vc++6.0\c++ºÚ¿Í±à³Ì½ÒÃØÓë·À·¶\chapter1\copy.c(23) : warning C4133: 'function' : incompatible types - from 'unsigned short *' to 'char *'
+d:\all_code\vc++6.0\c++ºÚ¿Í±à³Ì½ÒÃØÓë·À·¶\chapter1\copy.c(24) : warning C4133: 'function' : incompatible types - from 'unsigned short *' to 'char *'
+d:\all_code\vc++6.0\c++ºÚ¿Í±à³Ì½ÒÃØÓë·À·¶\chapter1\copy.c(25) : warning C4133: 'function' : incompatible types - from 'unsigned short *' to 'char *'
+d:\all_code\vc++6.0\c++ºÚ¿Í±à³Ì½ÒÃØÓë·À·¶\chapter1\copy.c(31) : warning C4013: 'puts' undefined; assuming extern returning int
+d:\all_code\vc++6.0\c++ºÚ¿Í±à³Ì½ÒÃØÓë·À·¶\chapter1\copy.c(32) : warning C4013: 'printf' undefined; assuming extern returning int
+Linking...
+
+
+
+<h3>Results</h3>
+copy.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
