@@ -6,10 +6,17 @@
 --------------------Configuration: moveDecrypt - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating command line "rc.exe /l 0x804 /fo"Debug/moveDecrypt.res" /d "_DEBUG" /d "_AFXDLL" "D:\All_Code\VC++6.0\MySoftware\moveDecrypt\moveDecrypt.rc"" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPD5C5.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/moveDecrypt.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\ALL_CODE\VC++6.0\MYSOFTWARE\moveDecrypt\moveDecryptDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPD5C5.tmp" 
 Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/moveDecrypt.pdb" /debug /machine:I386 /out:"Debug/moveDecrypt.exe" /pdbtype:sept  ".\Debug\moveDecrypt.obj" ".\Debug\moveDecryptDlg.obj" ".\Debug\StdAfx.obj" ".\Debug\moveDecrypt.res" "
 <h3>Output Window</h3>
-Compiling resources...
+Compiling...
+moveDecryptDlg.cpp
+D:\ALL_CODE\VC++6.0\MYSOFTWARE\moveDecrypt\moveDecryptDlg.cpp(190) : warning C4018: '<' : signed/unsigned mismatch
 Linking...
 
 

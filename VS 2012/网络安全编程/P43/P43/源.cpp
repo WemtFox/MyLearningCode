@@ -79,7 +79,13 @@ int main(){
 	printf("%s\n", (char *)pbBuffer);
 
 	//加密数据
-	if (! CryptEncrypt(hKey, 0,true, 0, pbBuffer, &dwCount, dwCount))
+	if (! CryptEncrypt(hKey,//加密密钥
+						0, //如果数据同时进行哈希和加密，这里传入一个哈希对象
+						true,//如果是最后一个被加密的块，输入true，否则输入false
+						0,//保留 
+						pbBuffer,//输入需加密的数据，输出加密后的数据
+						&dwCount,//输入加密数据的实际长度，输出加密后的数据长度
+						dwCount))//pbBuffer的大小
 
 	{
 		HandleError("CryptEncrypt函数执行出错. \n");

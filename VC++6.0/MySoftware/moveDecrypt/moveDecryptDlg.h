@@ -15,12 +15,13 @@ class CMoveDecryptDlg : public CDialog
 {
 // Construction
 public:
+	int GetId(int num);
+	VOID Decrypt(char* szWord);
 	CMoveDecryptDlg(CWnd* pParent = NULL);	// standard constructor
 
 // Dialog Data
 	//{{AFX_DATA(CMoveDecryptDlg)
 	enum { IDD = IDD_MOVEDECRYPT_DIALOG };
-		// NOTE: the ClassWizard will add data members here
 	//}}AFX_DATA
 
 	// ClassWizard generated virtual function overrides

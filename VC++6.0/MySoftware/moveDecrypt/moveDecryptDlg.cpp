@@ -63,7 +63,6 @@ CMoveDecryptDlg::CMoveDecryptDlg(CWnd* pParent /*=NULL*/)
 	: CDialog(CMoveDecryptDlg::IDD, pParent)
 {
 	//{{AFX_DATA_INIT(CMoveDecryptDlg)
-		// NOTE: the ClassWizard will add member initialization here
 	//}}AFX_DATA_INIT
 	// Note that LoadIcon does not require a subsequent DestroyIcon in Win32
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
@@ -73,7 +72,6 @@ void CMoveDecryptDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialog::DoDataExchange(pDX);
 	//{{AFX_DATA_MAP(CMoveDecryptDlg)
-		// NOTE: the ClassWizard will add DDX and DDV calls here
 	//}}AFX_DATA_MAP
 }
 
@@ -117,6 +115,8 @@ BOOL CMoveDecryptDlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// Set small icon
 	
 	// TODO: Add extra initialization here
+	//设置标题
+	SetWindowText("移位密码解密工具（by giantbranch）");
 	
 	return TRUE;  // return TRUE  unless you set the focus to a control
 }
@@ -173,5 +173,70 @@ HCURSOR CMoveDecryptDlg::OnQueryDragIcon()
 void CMoveDecryptDlg::OnButtonDecrypt() 
 {
 	// TODO: Add your control notification handler code here
+	char szWord[100];
+	GetDlgItem(IDC_EDIT_WORD)->GetWindowText(szWord, 100);	//获取字符串
+	Decrypt(szWord);//调用解密函数
+}
+
+
+VOID CMoveDecryptDlg::Decrypt(char *szWord)
+{
+	CString str;
+	int id;
+	//int ID = IDC_EDIT_DECRYPT1;
+	for (int j = 1; j <= 25; j++)
+	{
+		id = GetId(j-1);
+		for (int i = 0; i < strlen(szWord); i++)
+		{
+			if (szWord[i]>='a'&&szWord[i]<='z')
+			{
+				szWord[i] = (szWord[i] + 1 - 'a') % 26 +'a';
+			}else if (szWord[i]>='A'&&szWord[i]<='Z')
+			{
+				szWord[i] = (szWord[i] + 1 - 'A') % 26 +'A';
+			}
+			
+		}
+		str.Format("%s",szWord);		//获取字符串并转化成Cstring
+		GetDlgItem(id)->SetWindowText(str);
+	}
 	
+	//GetDlgItem(IDC_EDIT_WORD)
+	
+//	AfxMessageBox(str);		
+}
+
+
+
+int CMoveDecryptDlg::GetId(int num)
+{
+	const DWORD MyIdcGroup[] = {
+		IDC_EDIT_DECRYPT1,
+		IDC_EDIT_DECRYPT2,
+		IDC_EDIT_DECRYPT3,
+		IDC_EDIT_DECRYPT4,
+		IDC_EDIT_DECRYPT5,
+		IDC_EDIT_DECRYPT6,
+		IDC_EDIT_DECRYPT7,
+		IDC_EDIT_DECRYPT8,
+		IDC_EDIT_DECRYPT9,
+		IDC_EDIT_DECRYPT10,
+		IDC_EDIT_DECRYPT11,
+		IDC_EDIT_DECRYPT12,
+		IDC_EDIT_DECRYPT13,
+		IDC_EDIT_DECRYPT14,
+		IDC_EDIT_DECRYPT15,
+		IDC_EDIT_DECRYPT16,
+		IDC_EDIT_DECRYPT17,
+		IDC_EDIT_DECRYPT18,
+		IDC_EDIT_DECRYPT19,
+		IDC_EDIT_DECRYPT20,
+		IDC_EDIT_DECRYPT21,
+		IDC_EDIT_DECRYPT22,
+		IDC_EDIT_DECRYPT23,
+		IDC_EDIT_DECRYPT24,
+		IDC_EDIT_DECRYPT25,
+	};
+	return MyIdcGroup[num];
 }
