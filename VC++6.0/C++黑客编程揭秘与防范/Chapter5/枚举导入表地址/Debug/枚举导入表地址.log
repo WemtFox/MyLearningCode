@@ -1,0 +1,15 @@
+﻿生成启动时间为 2015/11/18 12:42:00。
+     1>项目“D:\All_Code\VC++6.0\C++黑客编程揭秘与防范\Chapter5\枚举导入表地址\枚举导入表地址.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt listImportDll.cpp
+         listImportDll.cpp
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\枚举导入表地址.exe" /INCREMENTAL /NOLOGO odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\Debug\枚举导入表地址.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\枚举导入表地址.lib" /MACHINE:X86 /SAFESEH .\Debug\listImportDll.obj
+     1>listImportDll.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/SAFESEH”规范)
+     1>listImportDll.obj : error LNK2019: 无法解析的外部符号 __imp__ImageDirectoryEntryToData@16，该符号在函数 _main 中被引用
+     1>.\Debug\枚举导入表地址.exe : fatal error LNK1120: 1 个无法解析的外部命令
+     1>已完成生成项目“D:\All_Code\VC++6.0\C++黑客编程揭秘与防范\Chapter5\枚举导入表地址\枚举导入表地址.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:01.69

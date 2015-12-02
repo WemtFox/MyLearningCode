@@ -85,6 +85,7 @@ BEGIN_MESSAGE_MAP(CDll_Inject_UnInjectDlg, CDialog)
 	ON_WM_QUERYDRAGICON()
 	ON_BN_CLICKED(IDC_BUTTON_Inject, OnBUTTONInject)
 	ON_BN_CLICKED(IDC_BUTTON_UnInject, OnBUTTONUnInject)
+	ON_BN_CLICKED(IDC_BUTTON_BROWSE, OnButtonBrowse)
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
@@ -120,7 +121,7 @@ BOOL CDll_Inject_UnInjectDlg::OnInitDialog()
 	
 	// TODO: Add extra initialization here
 	//设置标题
-	SetWindowText("DLL注入/卸载器");
+	SetWindowText("DLL注入/卸载器(by giantbranch)");
 	
 	return TRUE;  // return TRUE  unless you set the focus to a control
 }
@@ -301,4 +302,17 @@ VOID CDll_Inject_UnInjectDlg::UnInjectDll(DWORD dwPid, char *szDllName)
 	CloseHandle(hThread);
 	CloseHandle(hProcess);
 	AfxMessageBox("卸载成功");
+}
+
+void CDll_Inject_UnInjectDlg::OnButtonBrowse() 
+{
+	// TODO: Add your control notification handler code here
+	CFileDialog dlg( TRUE, _T( ".dll" ), _T( "test.dll" ), OFN_FILEMUSTEXIST | OFN_HIDEREADONLY, _T( "动态链接库(dll)|*.dll|所有文件|*||" ) );
+	if ( dlg.DoModal() == IDOK ) 
+	{
+		CString path = dlg.GetPathName();	//获取路径
+		//AfxMessageBox(path);
+		const char* key = (LPCSTR)path;
+		GetDlgItem(IDC_EDIT_PATH)->SetWindowText(key);
+	}
 }
